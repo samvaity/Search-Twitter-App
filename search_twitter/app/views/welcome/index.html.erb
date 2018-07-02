@@ -1,11 +1,6 @@
 <h1>Welcome to rubyonrails</h1>
 <p>Lets try to do this Twitter app!!</p>
-<%= form_for :twitterSearch, url: welcome_search_path do |form| %>
-  <p>
-    <%= form.text_field :search, size:"32", placeholder:"Search word" %>
-  </p>
-
-  <p>
-    <%= form.submit "Submit" %>
-  </p>
-<% end %>
+<%= form_for :search_form, url: "welcome/search" do |form| %>
+  <%= form.text_field :query %>
+  <%= form.submit :Search %>
+<% end  %>

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  get 'welcome/search'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  post 'welcome/search', to: 'welcome#search'
+  # match 'welcome/search' => 'logins#create', :as => :create_login
+
   root 'welcome#index'
 end
