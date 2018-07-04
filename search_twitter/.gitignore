@@ -16,7 +16,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-/config/initializers/twitter_credentials.rb
+/config/secrets.yml
 /node_modules
 /yarn-error.log
 

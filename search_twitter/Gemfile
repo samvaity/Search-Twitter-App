@@ -51,6 +51,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rest-client', '~> 1.6.7'
   gem 'twitter'
+  gem 'oauth'
 end
 
 group :test do

@@ -1,0 +1,8 @@
+<h1> These are the three popular tweets for the word: "<%= @query %>"</h1>
+<section id="tweets">
+  <ul>
+    <% @tweets.each do |tweet| %>
+      <li><%= "#{tweet}" %></li>
+  </ul>
+</section>
+<% end  %>
